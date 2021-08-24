@@ -29,10 +29,6 @@ nav{
     height: 8vh;
 }
 
-main {
-    background: url("https://paulohliima.github.io/portifolioPL.github.io/resources/img/bg.jpg") no-repeat center center;
-  }
-
 .nav-list{
       list-style: none;
       display: flex;

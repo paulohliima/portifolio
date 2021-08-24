@@ -4,6 +4,8 @@ main{
     display: flex;
     flex-direction: column;
     height: 1280px;
+    background: url("https://paulohliima.github.io/portifolioPL.github.io/resources/img/bg.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 .container{
