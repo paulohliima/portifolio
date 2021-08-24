@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 1280px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.profileImg img{
+    max-width: 250px;
+    margin-top: 25%;
+    margin-left: 10%;
+    border: solid 2px #fc7d7d;
+    border-radius: 100%;
+    padding: 2px;
+    margin-right: 5vw;
+}
+.accordion{
+    max-width: 650px;
+    padding-right: 20%;
+}
+.accordion .contentBx{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(85, 85, 85);
+    position: relative;
+    margin: 65px 20px;
+    opacity: 90%;
+}
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px;
+    background: rgb(35, 35, 46);
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.accordion .contentBx .label:hover{
+    opacity: 80%;
+}
+.accordion .contentBx .label::before{
+    content: "+";
+    position: relative;
+    top:50%;
+    left: 90%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.accordion .contentBx .content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.accordion .contentBx .content li{
+    list-style: none;
+    font-size: 20px;
+
+}
+
+.accordion .contentBx.active .content{
+    height: 150px;
+    padding: 10px;
+}
+.accordion .contentBx.active .label::before{
+    content: "--";
+    position: relative;
+    left: 90%;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1065px) {
+    *{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    main{
+        height: 1000px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .accordion{
+        max-width: 600px;
+        margin-top: 2vh;
+    }
+    .profileImg img{
+        max-width: 200px;
+        margin-top: 2%;
+        margin-left: 30%;
+        border: solid 2px #fc7d7d;
+        border-radius: 100%;
+        padding: 2px;
+    }
+    .accordion .contentBx{
+        margin: 5px 15% 0px 25%;
+    }
+}
