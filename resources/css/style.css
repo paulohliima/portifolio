@@ -30,7 +30,7 @@ nav{
 }
 
 main {
-    background: url("/resources/img/bg.jpg") no-repeat center center;
+    background: url("https://images5.alphacoders.com/367/367048.jpg") no-repeat center center;
     background-size: cover;
     height: 92vh;
   }
