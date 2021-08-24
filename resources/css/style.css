@@ -30,7 +30,7 @@ nav{
 }
 
 main {
-    background-image: url("https://portifolioPL.github.io/main/resources/img/bg.jpg") no-repeat center center;
+    background: url("https://paulohliima.github.io/portifolioPL.github.io/resources/img/bg.jpg") no-repeat center center
     background-size: cover;
     height: 92vh;
   }
